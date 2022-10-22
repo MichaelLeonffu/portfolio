@@ -1,34 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
 
-## Getting Started
+A portfolio for myself at [michaelleonffu.com](https://michaelleonffu.com).
 
-First, run the development server:
+To consolidate all my projects in a nice and presentable way. This includes links to many projects I've worked on and a CV.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Design and Implementation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+My developer goals for this portfolio:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Easily maintainable and expandable
+- Static single page site
+- Cloud hosted
+- Testable
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+My vision: to make this as easy to develop as possible so I can keep it up to date as often as possible. This also means I'll keep it as simple as possible with only essential features. All other features are deferred to separate projects.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Implemented using:
 
-## Learn More
+- Frontend Framework: [Next.js](https://nextjs.org) based on [React](https://reactjs.org)
+- Styles: [MUI](https://mui.com)
+- Hosted on: [Vercel.com](https://vercel.com)
+- IDE: [VSCode](https://code.visualstudio.com)
+- Version Control: [Github/michaelleonffu](https://github.com/MichaelLeonffu)
+- Testing: Jest (todo)
+- CI/CD: (todo)
 
-To learn more about Next.js, take a look at the following resources:
+### Why host on a cloud provider
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I usually always prefer self-hosted solutions; why host on a cloud provider?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Firstly**, I want the practice hosting on a cloud provider, CI/CD, building static sites, and learning the toolchain/workflow overall. I realize I have always self hosted and that it doesn't hurt to use a cloud provider.
 
-## Deploy on Vercel
+**Secondly**, I want the uptime to be closer to 99.99% compared to my self-hosted uptime of 98.99% haha. I upgrade my servers or services and it falls apart when I relocate my servers. _But shouldn't my self hosted solutions include redundancy?_: yes it should. Right now I'm not focusing on that. Later I'll make a series on Docker and distributed style software systems.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Lastly**, I will update this semi-infrequently making it a great use case for a static single-page cloud hosted webpage.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Planning
+
+_This is more about planning for my next 3 days not so much so the portfolio; I'll remove this later._
+
+To be built in 3 days worth of time.
+
+- Static Frontend Portfolio (1 day):
+  - Built with React and styled with MUI
+  - Single page
+- Blog blog.cookieandrock.com:
+  - Next.js framework with SSR and hosted on Vercel
+  - CMS backend using Strapi V4.0 (self-hosted)
+  - React/Next.js front end
+  - Incremental static building!!!!
+- Annali Bot, Art backend
+  - Account handling (via F2A using Discord)
+  - Session handling
+  - Full data and user preferences/permissions schema
+
+And if time permits then Jest testing for CI/CD.
+
+## Hosting and Services
+
+Other services I've created and how I'm hosting them:
+
+- Portfolio: React/Next.js hosted on Vercel
+- cookieandrock.com: self-hosted on rasberrypi
+- blog.cookieandrock.com: React/Next.js hosted on Vercel, no database yet
+- img.cookieandrock.com: self-hosted on raspberrypi, database on MongoDB Atlas
+- Annali Discord Bot: self-hosted on raspberrypi, database on MongoDB Atlas
+
+## Progress
+
+Check out my progress at [PROGRESS.md](./PROGRESS.md)
+
+The changelog is really just a `git log`. Progress is a record of the method I used to build this project. I do this because I want to keep track of what I work on, how I worked on it, and for how long.
+
+## Developing
+
+To update and rebuild the site.
+
+**Installing**
+
+Clone this repo, then run: `npm install`
+
+**Development mode**
+
+Use `npm run dev`
+
+**Pushing to production**
+
+Use ...
+
+**UPDATE THIS LATER**
