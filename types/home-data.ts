@@ -28,7 +28,7 @@ export default interface IHomeData {
         content: string,
         topics: string[],
     }[],
-    skills: {
+    skill: {
         title: string,
         content: string,
     }[]

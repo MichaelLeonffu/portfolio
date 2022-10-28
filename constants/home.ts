@@ -72,7 +72,7 @@ const HomeData: IHomeData = {
             ]
         },
     ],
-    skills: [
+    skill: [
         {
             title: "Photography",
             content: "I like to take photos.",

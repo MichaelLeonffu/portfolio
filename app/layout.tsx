@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import './global.css'
 import { Inter, Noto_Sans_Mono} from '@next/font/google'
 
 // Fonts
@@ -23,9 +23,7 @@ const notoSansMono = Noto_Sans_Mono({
 */
 const fontClassNames = [inter.variable, notoSansMono.variable].join(' ');
 
-export default function RootLayout({
-  children,
-}: {
+export default function RootLayout({ children }: {
   children: React.ReactNode
 }) {
   return (

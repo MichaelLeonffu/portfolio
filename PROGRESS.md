@@ -56,3 +56,17 @@ I used some references (noted in README), also I did everything in plain CSS for
 I think it took a long time to style (CSS) the portfolio. I learned a lot about making responsive design. And I learned a lot of HTML/CSS since I didn't use any prebuilt component libraries. Also I didn't worry about loading data because the whole page is static.
 
 Overall I had a good experience; but I think I need to move on to another project soon. It was fun working on this, and there is still some more work to be done on it.
+
+### Refactoring
+**2 Hours**
+
+Using [Next.js Colocation](https://beta.nextjs.org/docs/routing/fundamentals#colocation) feature to move all related components and their styles into the same dir.
+
+- Moved globals to `/app/global.css` [Global Styles](https://beta.nextjs.org/docs/styling/global-styles)
+- Typing Function Components properly using [Function Components typing reference](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components)
+- Moved `./styles/Home.modules.css` into `/app/styles.module.css` as Colocation
+- Refactored out a "portfolio-section" `/app/portfolio-section.tsx` as all the containers that contain each portfolio section; styling was also refactored out
+- Moved each section out into their own `.tsx` and `.module.css` files colocated each.
+  - This makes it look like there are a lot of files. Not sure if this was the best choice.
+- Now I'm fixing a lot of the mistakes in the CSS classes; some selectors are wrong after the refactoring
+- It's easy to navigate the code, but now it's hard to look at the number of files

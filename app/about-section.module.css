@@ -1,0 +1,46 @@
+.about .aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+/* When screen is larger expand to 2 columns */
+@media (min-width: 50rem) {
+  .about .aboutGrid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.about div p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.about .imageContainer {
+  height: 306px;
+  width: 306px;
+  border-color: var(--color-primary-dark);
+}
+
+.about .image {
+  object-fit: cover;
+  border-radius: 40px;
+  margin-top: 3px;
+  margin-left: 3px;
+  width: 300px;
+  height: 300px;
+
+  transition:
+    margin-top 0.25s,
+    margin-left 0.25s,
+    width 0.25s,
+    height 0.25s;
+  transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.about .image:hover {
+  margin-top: -3px;
+  margin-left: -3px;
+  width: 309px;
+  height: 309px;
+}

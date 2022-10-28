@@ -1,0 +1,59 @@
+.experience {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.experienceCard {
+  display: block;
+  box-sizing: border-box;
+  border-left: 0.25rem dashed var(--accent-color);
+  padding: 1.5rem;
+  min-width: 19rem;
+  max-width: 40rem;
+  margin-bottom: 3rem;
+}
+
+.experienceCard header {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.experienceCard header h3 {
+  display: block;
+  color: var(--color-text-primary);
+  text-align: left;
+}
+
+.experienceCard header h3 a {
+  display: inline-block;
+}
+
+.experienceCard header p.date {
+  padding-bottom: 2rem;
+}
+
+.experienceCard header p {
+  font-size: 12px;
+  font-family: var(--font-family-mono);
+}
+
+.experienceCard header ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experienceCard header ul li {
+  padding-left: 1.3em;
+}
+
+.experienceCard header ul li::before {
+  content: 'chevron_right';
+  font-family: 'Material Symbols Outlined';
+  font-weight: 700;
+  color: var(--accent-color);
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+}

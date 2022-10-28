@@ -1,0 +1,75 @@
+.projectCardGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  gap: 1rem;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* When screen is larger expand to 2 columns */
+@media (min-width: 50rem) {
+  .projectCardGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.projectCard {
+  padding: 1.5rem;
+  background: var(--color-primary-light);
+  height: 22rem;
+  min-width: 19rem;
+  max-width: 25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+  transition: margin-top 0.25s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.projectCard:hover {
+  margin-top: -1rem;
+}
+
+.projectCard header h5 {
+  display: block;
+  color: var(--color-text-primary);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.projectCard header p {
+  display: block;
+  text-align: left;
+}
+
+.projectCard header h5 p {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  font-family: var(--font-family-mono);
+}
+
+.projectCard footer {
+  display: block;
+  margin-top: auto;
+}
+
+.projectCard footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+.projectCard footer ul li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+.projectCard footer ul li p {
+  display: inline;
+  font-size: 12px;
+  font-family: var(--font-family-mono);
+}
