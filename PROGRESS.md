@@ -16,3 +16,43 @@ Firstly need to learn what the bare minimum is for making a Next.js project.
 - Then, if you have a domain, set it using: [Vercel Domain Settings](https://vercel.com/michaelleonffu/portfolio/settings/domains)
 - Make some changes to [index.tsx](./pages/index.tsx) to show Michael Leonffu
 - Temporarily changed [favicon.ico](./public/favicon.ico)
+
+## Portfolio
+**18 hours**
+
+I did a bad job keeping record here.
+
+### Upkeep
+
+Meta level code stuff: Upgrading, refactoring, creating constants...
+
+- Upgraded to Next.js v13.0
+- Removed the `/pages` for `/app`
+  - Refactored code from `/pages/_document.jsx` and `/pages/_app.jsx` into `/app/page.tsx` and `/app/head.tsx`
+- Removed `/pages/api`; not sure where it migrates to.
+- Added a `IHomeData` type in `/types`
+- Added a constant `home.ts` data constant in `/constants`
+  - This way I can keep the data separate from the html
+
+### Portfolio
+
+I used some references (noted in README), also I did everything in plain CSS for practice.
+
+- Added `section`s for each of:
+  - Hero: introduction, has my name
+  - About: 3 paragraphs about me and a profile picture
+  - Experience: work experiences
+  - Project: projects I've worked on
+  - Skill: other skills or hobbies that I have
+- Currently all the CSS and sections are in one file, needs to be refactored
+- Had issues with testing since components don't update on refresh
+- Styles currently exist in `/styles/` but can/will be moved per each component
+- Color scheme inspired by Material color theme on VS Code
+- Took a long time; Got Google Fonts to work. Notes in the implementation
+  - A.k.a using 2 fonts via their `variable` implementation rather than their `className` implementation
+  - Adding a `link` with `ts ignore` in order to avoid silly issues with hydration
+- CSS selectors for React `classNames`; inner classnames can be found from `styles` as `styles.innerClassName` when inside a parent node which has the `styles.outerClassName`
+
+I think it took a long time to style (CSS) the portfolio. I learned a lot about making responsive design. And I learned a lot of HTML/CSS since I didn't use any prebuilt component libraries. Also I didn't worry about loading data because the whole page is static.
+
+Overall I had a good experience; but I think I need to move on to another project soon. It was fun working on this, and there is still some more work to be done on it.

@@ -35,27 +35,6 @@ I usually always prefer self-hosted solutions; why host on a cloud provider?
 
 **Lastly**, I will update this semi-infrequently making it a great use case for a static single-page cloud hosted webpage.
 
-## Planning
-
-_This is more about planning for my next 3 days not so much so the portfolio; I'll remove this later._
-
-To be built in 3 days worth of time.
-
-- Static Frontend Portfolio (1 day):
-  - Built with React and styled with MUI
-  - Single page
-- Blog blog.cookieandrock.com:
-  - Next.js framework with SSR and hosted on Vercel
-  - CMS backend using Strapi V4.0 (self-hosted)
-  - React/Next.js front end
-  - Incremental static building!!!!
-- Annali Bot, Art backend
-  - Account handling (via F2A using Discord)
-  - Session handling
-  - Full data and user preferences/permissions schema
-
-And if time permits then Jest testing for CI/CD.
-
 ## Hosting and Services
 
 Other services I've created and how I'm hosting them:
@@ -74,18 +53,42 @@ The changelog is really just a `git log`. Progress is a record of the method I u
 
 ## Developing
 
-To update and rebuild the site.
-
 **Installing**
 
-Clone this repo, then run: `npm install`
+Clone this repo, then run: `npm install`.
 
 **Development mode**
 
-Use `npm run dev`
+Use `npm run dev`; Then go to [localhost:3000](http://localhost:3000).
 
 **Pushing to production**
 
-Use ...
+Test a production version with `npm run build`.
 
-**UPDATE THIS LATER**
+Commit to `main` and `git push` so Vercel can see the changes.
+
+## References
+
+Some references I used for designing and building the website.
+
+### HTML/CSS/Next.js
+
+- [W3 HTML Tutorial](https://www.w3schools.com/html/default.asp)
+- [W3 CSS Tutorial](https://www.w3schools.com/css/default.asp)
+- [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  - Looking at really detailed APIs, eg: linear-gradient() or clamp()
+- [CSS-Tricks](https://css-tricks.com/guides/)
+  - [Flex Box](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  - [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Next.js v13](https://beta.nextjs.org/docs/getting-started)
+
+### Portfolios
+
+- [My friend: Alex Baratti's portfolio](https://alexsmbaratti.com)
+- [hackernoon 21 best dev portfolios](https://hackernoon.com/21-best-developer-portfolio-examples-p61j31wi)
+- [brittanychiang.com](https://brittanychiang.com)
+- [kuon.space](https://kuon.space)
+- [riccardozanutta.com](http://riccardozanutta.com)
+- [hashnode 30 web dev portfolios](https://hashnode.com/post/30-web-developer-portfolios-to-inspire-you-cknfx6wdg069kxws1bjjv8mhw)
+- [braydoncoyer.dev](https://braydoncoyer.dev)
+- [monicalent.com](https://monicalent.com)
